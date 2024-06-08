@@ -184,7 +184,8 @@ body::after {
   left: 0px !important;
   background-color: rgb(13, 71, 161);
   background-image: linear-gradient(rgb(40, 62, 81) 0%, rgb(10, 35, 66) 100%);
-  pointer-events: initial;}
+  pointer-events: initial;
+}
 
 .navbar {
   margin-top: -16%;
@@ -202,6 +203,10 @@ body::after {
 
 .navbar:hover {
   width: 11%;
+}
+
+.navbar:hover .logo img {
+  margin-left: -13px;
 }
 
 .nav_items {
@@ -229,8 +234,22 @@ body::after {
   color: white;
 }
 
-.nav_items li a:hover {
+.nav_items li .h:hover {
   transform: scale(1.1);
   background-color: white;
   color: black;
+}
+
+.logo a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.logo img {
+  margin-top: -100px;
+  margin-left: -29px;
+  width: 150px;
+  /* Adjust the size as needed */
+  height: auto;
 }

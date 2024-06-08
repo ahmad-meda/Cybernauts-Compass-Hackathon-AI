@@ -10,8 +10,8 @@
   width: 70%;
   height: 70px;
   margin-bottom: 20px;
-  padding: 10px;
-  font-size: 18px;
+  padding: 20px;
+  font-size: 20px;
   border: none;
   border-radius: 15px;
   text-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
@@ -23,12 +23,12 @@
 .download_btn {
   display: block;
   width: 150px;
-  height: 40px;
+  height: 45px;
   padding: 5px 20px;
   margin: 20px auto;
-  font-size: 16px;
+  font-size: 18px;
   border: none;
-  border-radius: 50px;
+  border-radius: 10px;
   cursor: pointer;
   font-weight: 600;
   transition: background-color 0.3s, transform 0.3s;

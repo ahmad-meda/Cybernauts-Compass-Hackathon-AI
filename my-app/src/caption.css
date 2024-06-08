@@ -18,12 +18,12 @@
 .submit {
   display: block;
   width: 150px;
-  height: 40px;
+  height: 45px;
   padding: 5px 10px;
   margin: 20px auto;
-  font-size: 16px;
+  font-size: 18px;
   border: none;
-  border-radius: 50px;
+  border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.3s;
   background-color: white;
