@@ -32,7 +32,7 @@ function Audio() {
       <div className="content">
         <textarea
           className="text_area"
-          placeholder="Enter input here"
+          placeholder="Enter main idea to generate related audio"
           value={input}
           onChange={(e) => setInput(e.target.value)}>
         </textarea>

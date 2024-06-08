@@ -35,7 +35,7 @@ function Video() {
       <div className="content">
         <textarea
           className="text_area"
-          placeholder="Enter input here"
+          placeholder="Enter the idea and details of the video to be generated"
           value={input}
           onChange={(e) => setInput(e.target.value)}
         ></textarea>
