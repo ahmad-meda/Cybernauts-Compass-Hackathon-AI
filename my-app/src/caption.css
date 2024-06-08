@@ -7,11 +7,11 @@
 }
 
 .title {
-  color: white;
+  color: #21d685;
   font-weight: 500;
   font-family: "Outfit", sans-serif;
   letter-spacing: 2px;
-  margin-left: 520px;
+  margin-left: 510px;
   font-size: 45px;
 }
 
@@ -39,7 +39,7 @@
   transition: background-color 0.3s;
   background-color: white;
   border: 5px solid black;
-  color: rgb(81, 81, 81);
+  color: #21d685;
   margin-bottom: 30px;
 }
 

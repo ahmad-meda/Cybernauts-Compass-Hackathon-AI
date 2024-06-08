@@ -236,8 +236,7 @@ body::after {
 
 .nav_items li .h:hover {
   transform: scale(1.1);
-  background-color: white;
-  color: black;
+  color: #21d685;
 }
 
 .logo a {
