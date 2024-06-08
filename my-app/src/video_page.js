@@ -14,7 +14,7 @@ function Video() {
       });
       setOutput(response.data.generated_text);
       speak(response.data.generated_text); // Convert text to speech
-      if(response.data.video_path)
+      if (response.data.video_path)
         setVideoPath(response.data.video_path);
     } catch (error) {
       console.error('Error generating text and video:', error);
@@ -41,17 +41,17 @@ function Video() {
         ></textarea>
         <button className='generate_btn' onClick={handleGenerate}>Generate</button>
         {output && (
-          <div>
+          <div className="video_text">
             <h2>Generated Text</h2>
             <p>{output}</p>
           </div>
         )}
         {videoPath && (
-        <div>
-          <h2>Generated Video</h2>
-          <video src={`http://localhost:5001/${videoPath}`} controls></video>
-        </div>
-      )}
+          <div>
+            <h2>Generated Video</h2>
+            <video src={`http://localhost:5001/${videoPath}`} controls></video>
+          </div>
+        )}
       </div>
     </>
   );
