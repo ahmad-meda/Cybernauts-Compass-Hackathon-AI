@@ -5,6 +5,7 @@ function Caption() {
 
   return (
     <>
+      <p class="title">Caption Generator</p>
       <div className="content">
         <form className="uplaod_box" action="">
           <div className="icon"><MdOutlineFileUpload size={45} /></div>
