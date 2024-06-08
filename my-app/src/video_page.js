@@ -47,7 +47,7 @@ function Video() {
           </div>
         )}
         {videoPath && (
-          <div>
+          <div className="video_container">
             <h2>Generated Video</h2>
             <video src={`http://localhost:5001/${videoPath}`} controls></video>
           </div>
