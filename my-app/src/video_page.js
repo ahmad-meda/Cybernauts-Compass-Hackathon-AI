@@ -5,6 +5,7 @@ import './video_page.css';
 function Video() {
   const [input, setInput] = useState('');
   const [output, setOutput] = useState('');
+  const [videoPath, setVideoPath] = useState('');
 
   const handleGenerate = async () => {
     try {
@@ -13,8 +14,10 @@ function Video() {
       });
       setOutput(response.data.generated_text);
       speak(response.data.generated_text); // Convert text to speech
+      if(response.data.video_path)
+        setVideoPath(response.data.video_path);
     } catch (error) {
-      console.error('Error generating text:', error);
+      console.error('Error generating text and video:', error);
     }
   };
 
@@ -43,6 +46,12 @@ function Video() {
             <p>{output}</p>
           </div>
         )}
+        {videoPath && (
+        <div>
+          <h2>Generated Video</h2>
+          <video src={`http://localhost:5001/${videoPath}`} controls></video>
+        </div>
+      )}
       </div>
     </>
   );
