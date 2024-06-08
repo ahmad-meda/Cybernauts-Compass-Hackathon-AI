@@ -32,10 +32,11 @@ function Video() {
 
   return (
     <>
+      <p class="video_title">AI Video Generator</p>
       <div className="content">
         <textarea
           className="text_area"
-          placeholder="Enter the idea and details of the video to be generated"
+          placeholder="Enter the idea and details of the video to be generated with transcription"
           value={input}
           onChange={(e) => setInput(e.target.value)}
         ></textarea>
