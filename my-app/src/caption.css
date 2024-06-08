@@ -1,7 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
 .content {
   margin-left: 7%;
   padding: 20px;
   flex-grow: 1;
+}
+
+.title {
+  color: white;
+  font-weight: 500;
+  font-family: "Outfit", sans-serif;
+  letter-spacing: 2px;
+  margin-left: 520px;
+  font-size: 45px;
 }
 
 .upload {
