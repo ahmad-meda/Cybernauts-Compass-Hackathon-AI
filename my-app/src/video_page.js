@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import axios from 'axios';
 import './video_page.css';
 
 function Video() {
@@ -31,11 +32,12 @@ function Video() {
 
   return (
     <>
-      <p class="title">AI Video Generator</p>
       <div className="content">
         <textarea
           className="text_area"
           placeholder="Enter input here"
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
         ></textarea>
         <button className='generate_btn' onClick={handleGenerate}>Generate</button>
         {output && (
