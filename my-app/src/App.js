@@ -3,6 +3,7 @@ import { FaVideo, FaClosedCaptioning, FaFileAudio } from "react-icons/fa";
 import './App.css';
 
 function App() {
+
   return (
     <>
       <div className='tsparticles' data-generated="false" aria-hidden="true" width=" 1858" height=" 1424"
@@ -13,7 +14,8 @@ function App() {
           <li><a href="/caption"><FaClosedCaptioning /></a></li>
           <li><a href="/audio"><FaFileAudio /></a></li>
         </ul>
-      </div></>
+      </div>
+    </>
   );
 }
 
