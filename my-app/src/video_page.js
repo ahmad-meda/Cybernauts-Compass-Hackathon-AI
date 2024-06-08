@@ -32,10 +32,11 @@ function Video() {
 
   return (
     <>
+      <p class="video_title">AI Video Generator</p>
       <div className="content">
         <textarea
           className="text_area"
-          placeholder="Enter input here"
+          placeholder="Enter the idea and details of the video to be generated with transcription"
           value={input}
           onChange={(e) => setInput(e.target.value)}
         ></textarea>
@@ -47,7 +48,7 @@ function Video() {
           </div>
         )}
         {videoPath && (
-          <div>
+          <div className="video_container">
             <h2>Generated Video</h2>
             <video src={`http://localhost:5001/${videoPath}`} controls></video>
           </div>

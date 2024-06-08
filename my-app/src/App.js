@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaVideo, FaClosedCaptioning, FaFileAudio } from "react-icons/fa";
+import { FaVideo, FaFileAudio } from "react-icons/fa";
 import './App.css';
 
 function App() {
@@ -14,7 +14,6 @@ function App() {
             <a href="/"><img src={require('./logo.png')} alt="" /></a>
           </li>
           <li><a className="h" href="/"><FaVideo /></a></li>
-          <li><a className="h" href="/caption"><FaClosedCaptioning /></a></li>
           <li><a className="h" href="/audio"><FaFileAudio /></a></li>
         </ul>
       </div>
